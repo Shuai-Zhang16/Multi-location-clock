@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from planet_time_calculation import PlanetTimeCalculator
+from PIL import Image, ImageTk
 
 
 def add_selected_planet_time():
@@ -86,7 +87,7 @@ if __name__ == "__main__":
     columns = ('Planet Name', 'Time')
     treeview = ttk.Treeview(root, columns=columns, show='headings')
     treeview.heading('Planet Name', text='Planet Name')
-    treeview.heading('Time', text='Time in Year/Month/Day - Hour/Minutes/Seconds')
+    treeview.heading('Time', text='Earth Time in Year/Month/Day - Hour/Minutes/Seconds')
     treeview.column('Planet Name', anchor='center')
     treeview.column('Time', anchor='center')
     treeview.pack(expand=True, fill='both', padx=5, pady=5)
